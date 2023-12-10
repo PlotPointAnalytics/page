@@ -10,31 +10,35 @@
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
 
         .bg {
             background-image: url("background.jpg");
-            height: 100%;
+            width: 100%;
+            max-width: 800px; /* Limit max width */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px; /* Added padding for smaller screens */
         }
 
         .content {
             text-align: center;
-            padding: 50px;
+            padding: 20px;
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
-            max-width: 800px; /* Max width for larger screens */
-            margin: auto; /* Centering for all screen sizes */
         }
 
         h1 {
-            margin-bottom: 40px;
+            font-size: 2em; /* Responsive font size */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1em; /* Responsive font size */
         }
 
         a {
@@ -45,6 +49,7 @@
             color: white;
             border-radius: 5px;
             text-decoration: none;
+            font-size: 1em; /* Responsive font size */
         }
 
         a:hover {
@@ -52,21 +57,18 @@
         }
 
         /* Media Queries */
-        @media (max-width: 768px) {
-            .content {
-                padding: 30px; /* Smaller padding for small devices */
+        @media (max-width: 600px) {
+            .bg {
+                background-image: none; /* Optional: Hide background on smaller screens */
             }
-            h1 {
-                font-size: 24px; /* Smaller font size for headers on small screens */
-            }
-        }
 
-        @media (max-width: 480px) {
             .content {
-                padding: 20px; /* Even smaller padding for very small devices */
+                background-color: white;
             }
-            h1 {
-                font-size: 20px; /* Even smaller font size for headers on very small screens */
+
+            h1, p, a {
+                padding: 10px;
+                font-size: 0.8em; /* Smaller font size for smaller screens */
             }
         }
     </style>
@@ -84,3 +86,4 @@
 
 </body>
 </html>
+
