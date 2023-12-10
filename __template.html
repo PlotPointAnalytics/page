@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlotPoint Trends</title>
+    <title>{{APP_NAME}}</title>
     <style>
         body, html {
             height: 100%;
@@ -13,7 +13,7 @@
         }
 
         .bg {
-            background-image: url("background.jpg");
+            background-image: url("background.png"); /* You should replace this with your own background image. */
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
@@ -21,16 +21,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px; /* Added padding for smaller screens */
         }
 
         .content {
             text-align: center;
             padding: 50px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
             border-radius: 10px;
-            max-width: 800px; /* Max width for larger screens */
-            margin: auto; /* Centering for all screen sizes */
         }
 
         h1 {
@@ -41,33 +38,14 @@
             display: inline-block;
             padding: 10px 20px;
             font-weight: bold;
-            background-color: #333;
+            background-color: #333; /* Dark grey background */
             color: white;
             border-radius: 5px;
             text-decoration: none;
         }
 
         a:hover {
-            background-color: #555;
-        }
-
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .content {
-                padding: 30px; /* Smaller padding for small devices */
-            }
-            h1 {
-                font-size: 24px; /* Smaller font size for headers on small screens */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .content {
-                padding: 20px; /* Even smaller padding for very small devices */
-            }
-            h1 {
-                font-size: 20px; /* Even smaller font size for headers on very small screens */
-            }
+            background-color: #555; /* Lighter grey on hover */
         }
     </style>
 </head>
@@ -75,10 +53,11 @@
 
 <div class="bg">
     <div class="content">
-        <h1>PlotPoint Trends</h1>
+        <h1>{{APP_NAME}}</h1>
         <h2><p>Find out more about our upcoming app. Join the waiting list for exclusive early access!</p></h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/i1idAJsoOFQ?si=0EbCrdudtfyDRVR8" title="Sign up now" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <p><a href="YOUR_GOOGLE_FORM_OR_MAILCHIMP_LINK_HERE" target="_blank">Sign Up Now</a></p>
+        
     </div>
 </div>
 
